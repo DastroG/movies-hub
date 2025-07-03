@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.img {
+    width: 20%;
+    height: 9vh;
+    overflow: hidden;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.holder {
+    width: 50%;
+    height: 100%;
+    padding: 5px 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 7px;
+    overflow: hidden;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #FCF096;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ri-search-line {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.search-bar {
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 600;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.tagline {
+    /* background-color: white; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    color: white;
+}
+
+.tagline h1{
+    text-align: center; 
+    font-size: 7vh;
+    font-weight: 400;
+}
+
+.control {
+    margin-top: 5px;
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+}
+
+/* 🌟 First Swiper (with .first-swiper class) */
+.swiper.first-swiper {
+    width: 100%;
+    height: 60vh;
+    padding: 60px 0 70px;
+  }
+  
+  .first-swiper .swiper-slide {
+    position: relative;
+    width: clamp(250px, 30vw, 350px);
+    aspect-ratio: 6 / 7;
+    border-radius: 12px;
+    background-color: #FCF096;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
+    min-width: clamp(250px, 30vw, 350px);
+  }
+  
+  .first-swiper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .first-swiper .swiper-slide:active {
+    box-shadow: 0 0 0 1px rgba(72, 69, 84, 0.3),
+                0 5px 30px 3px rgba(72, 69, 84, 0.6);
+  }
+  
+  .first-swiper .image-wrapper img {
+    position: absolute;
+    inset: 2%;
+    width: 96%;
+    height: 96%;
+    border: 0;
+    border-radius: 8px;
+    z-index: 2;
+    transition: all 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s;
+    will-change: transform;
+  }
+  
+  .first-swiper .swiper-slide-active .image-wrapper img {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: clamp(180px, 30vw, 250px);
+    height: clamp(180px, 30vw, 250px);
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .first-swiper .swiper-slide .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+  
+  .first-swiper .swiper-slide .container h1 {
+    margin-bottom: 20px;
+    padding: 0.6em 1.4em;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    line-height: 1.4;
+    max-width: 90%;
+    pointer-events: none;
+  }
+  
+  .first-swiper .swiper-slide-active .container h1 {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    position: relative;
+}
+
+.headings {
+   width: 100%;
+   height: 20%;
+   padding: 50px 0;
+}
+
+.headings h1 {
+    font-size: 7vh;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.headings h3 {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #F5C518;
+    font-weight: 300;
+}
+
+.options {
+    position: absolute;
+    bottom: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1D1D;
+    margin-top: 20px;
+    width: 50%;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.options h3 {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 2.5vh, 1.3rem);
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease, border-radius 0.4s ease;
+}
+
+/* Default selected look for the first item */
+.options h3:nth-child(1) {
+    background-color: #FCF096;
+    color: #000;
+    border-radius: 30px;
+}
+
+/* Hover effect for any item */
+.options h3:hover {
+    background-color: #FCF096;
+    color: #000;
+    border-radius: 30px;
+}
+
+/* On hover of any, remove background from 1st if it's not hovered */
+.options:hover h3:nth-child(1):not(:hover) {
+    background-color: transparent;
+    color: #fff;
+}
+
+.mySwiper {
+    margin-top: 10%;
+    width: 100%;
+    height: 60vh; /* fixed height */
+    padding: 0 20px; /* optional: inner spacing for swiper */
+    display: flex; /* added flex for better centering */
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .mySwiper .swiper-slide {
+    width: 150px; /* fixed width to maintain uniform spacing */
+    height: 100%; /* Ensure it takes up the full height available */
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mySwiper .img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .mySwiper .img-wrapper img {
+    width: 100%; /* make sure it scales with the container */
+    height: 100%; /* make sure it fills the container fully */
+    object-fit: cover; /* ensures the image covers the container area */
+    border-radius: 20px;
+  }
+  
